@@ -1,16 +1,119 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@keyframes spin-slow {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* === Global styles === */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  text-align: center;
 }
 
-.animate-spin-slow {
-  animation: spin-slow 8s linear infinite;
+/* === Main container === */
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+}
+
+/* === Headers === */
+header h1 {
+  font-size: 2.5rem;
+  color: #00d4ff;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+}
+
+/* === Section styles === */
+section {
+  margin-top: 40px;
+}
+
+section h2 {
+  border-bottom: 2px solid #00d4ff;
+  display: inline-block;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  color: #00d4ff;
+}
+
+/* === About === */
+.about p {
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+/* === Skills === */
+.skills ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.skills li {
+  background: #00d4ff;
+  color: #0b132b;
+  font-weight: bold;
+  padding: 10px 18px;
+  border-radius: 20px;
+}
+
+/* === Projects === */
+.projects ul {
+  list-style: none;
+  padding: 0;
+}
+
+.projects li {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.projects a {
+  color: #00d4ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.projects a:hover {
+  text-decoration: underline;
+}
+
+/* === Contact === */
+.contact a {
+  color: #00d4ff;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* === Footer === */
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.logo {
+  height: 20px;
+  margin: 0 5px;
+  vertical-align: middle;
 }
